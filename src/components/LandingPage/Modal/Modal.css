@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;500;700&display=swap");
+
+.modal-container {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(64, 64, 64, 0.3);
+  position: fixed;
+}
+.modal {
+  width: 41%;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px;
+}
+.modal__content section {
+  display: flex;
+  justify-content: space-between;
+  border: 1px black solid;
+}
+.modal__content section div {
+  display: flex;
+  gap: 28px;
+}

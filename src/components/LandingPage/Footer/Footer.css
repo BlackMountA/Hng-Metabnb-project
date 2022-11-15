@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;500;700&display=swap");
+
+footer {
+  background: #1d1d1e;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 86%;
+  margin: 0 auto;
+  padding-top: 63px;
+  padding-bottom: 37px;
+}
+
+.footer__social-links {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 32px;
+}
+.copyright {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  /* or 100% */
+
+  display: flex;
+  align-items: center;
+
+  /* logo 1 */
+
+  color: #f7f7f7;
+}
+.right-side {
+  display: flex;
+  width: 75%;
+  justify-content: space-evenly;
+}
+.navigations h4 {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  /* white */
+
+  color: #ffffff;
+}
+.navigations ul li {
+  list-style: none;
+}
+.navigations {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  /* white */
+
+  color: #ffffff;
+}
+.navigation-link {
+  text-decoration: none;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 35px;
+  /* or 250% */
+
+  display: flex;
+  align-items: center;
+
+  color: #f1f3f9;
+}

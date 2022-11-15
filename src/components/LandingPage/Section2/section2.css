@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;500;700&display=swap");
+
+.sponsors {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+}
+.sponsors__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* max-width: 1220px; */
+  width: 80%;
+  margin: 0 auto;
+}
+.sponsors__content--opensea {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.sponsors__content--opensea p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 96%;
+  /* or 31px */
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+}
