@@ -2,9 +2,22 @@ import logo from './Group.png'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 
+import './Modal.css'
+import X from './x.svg'
+import DownBtn from './DownBtn.svg'
+import WalletConnect from './WalletConnect.png'
+import { useState } from 'react'
 
 const Navbar = () => {
-  return (
+    const [modal, Setmodal] = useState(false);
+    const onToggle = () => {
+        Setmodal(!modal)
+    }
+    return (
+        <>
+            
+            
+      
       <nav>
           <img src={logo} alt='MetaBnb' />
           <div className='navbar'>
@@ -15,8 +28,42 @@ const Navbar = () => {
                   <li><Link to={'/'} className='navbar__links'>Community</Link></li>
               </ul>
           </div>
-          <button className='navbar__btn'>Connect Wallet</button>
-      </nav>
+          <button className='navbar__btn' onClick={onToggle}>Connect Wallet</button>
+            </nav>
+            {modal && (
+<div className='modal'>
+                <div className='overlay' onClick={onToggle}></div>
+          
+        <div className='modal-container'>
+              <div className='modal__header'>
+                  <h2>Connect Wallet</h2>
+                  <img src={X}  alt='cancel- button' onClick={onToggle}></img>
+              </div> 
+              <div className='modal__content'>
+                  <p>Choose your preferred wallet</p>
+                    <section id='metamask'>
+                      <div>
+                          <img src={WalletConnect} alt="metamask logo" />
+                          <p>MetaMask</p> 
+                          
+                      </div>
+                      <img src={DownBtn} alt='Down Btn' />
+                  </section>
+                  <section>
+                  <div>
+                      <img src={WalletConnect} alt='walletconnect Logo' />
+                      <p>Wallet Connect</p>
+                      </div>
+                      <img src={DownBtn} alt='Down Btn' />
+                  </section>
+                  
+              
+          </div>
+                    </div>
+                    </div>
+            
+            )}
+            </>
   )
 }
 

@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;500;700&display=swap");
 
-.modal-container {
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.overlay {
   height: 100vh;
   width: 100vw;
   background: rgba(64, 64, 64, 0.3);
-  position: fixed;
 }
-.modal {
+.modal-container {
   width: 41%;
   background-color: #fff;
   position: absolute;
