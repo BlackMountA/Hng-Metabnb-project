@@ -8,23 +8,65 @@
 }
 .modal {
   width: 41%;
-  background-color: red;
+  background-color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 16px;
 }
 .modal__header {
   display: flex;
   justify-content: space-between;
   padding: 15px 15px;
 }
+.modal__content {
+  padding: 15px;
+  border-top: 1px solid #cfd8dc;
+}
+.modal__content {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #333333;
+}
 .modal__content section {
   display: flex;
   justify-content: space-between;
-  border: 1px black solid;
+  align-items: center;
+
+  /* DTC Light Gray (BG) */
+
+  /* DTC Mid Gray */
+
+  border: 1px solid #cfd8dc;
+  border-radius: 12px;
+  padding: 8px;
+  margin-top: 10px;
+}
+#metamask {
+  background: #f8f9fa;
+}
+.modal__content section img {
+  width: 30px;
+  height: 30px;
 }
 .modal__content section div {
   display: flex;
   gap: 28px;
+  align-items: center;
+}
+.modal__content section div p {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  color: #000000;
 }

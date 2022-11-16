@@ -12,7 +12,7 @@ function App() {
   return (
    
     <div className="App">
-      {/* <Modal /> */}
+      <Modal />
       <Header />
       <Section1 />
       <Section2 />

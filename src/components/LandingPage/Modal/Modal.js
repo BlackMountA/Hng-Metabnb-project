@@ -13,7 +13,7 @@ const Modal = () => {
               </div> 
               <div className='modal__content'>
                   <p>Choose your preferred wallet</p>
-                    <section>
+                    <section id='metamask'>
                       <div>
                           <img src={WalletConnect} alt="metamask logo" />
                           <p>MetaMask</p> 
