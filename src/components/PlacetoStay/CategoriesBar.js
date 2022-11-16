@@ -1,6 +1,10 @@
 // import { Link } from "react-router-dom"
 import Setting from './Settings.svg'
 import './CategoriesBar.css'
+import  NFTsData  from "./NftsData";
+import Nft from "./Nft";
+
+
 
 const Categories = () => {
   return (
@@ -22,7 +26,12 @@ const Categories = () => {
               <img src={Setting} alt='settings' />
               
         </div>
-        </div> 
+      </div> 
+      {/* <section className="places">
+        {NFTsData.map((nft) => {
+          return <Nft  nfts={nft} key={nft.id} />;
+        })}
+      </section> */}
       </div>
   )
 }

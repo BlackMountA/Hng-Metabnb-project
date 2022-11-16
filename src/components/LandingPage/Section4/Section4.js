@@ -10,8 +10,10 @@ const Section4 = () => {
 
               <button><p>Learn More</p></button>
           </div>
-          <div className='right-section'>
-              <img src={Frame59546} alt='sectional pix' />
+        <div className='right-section'>
+          <div>
+          <img src={Frame59546} alt='sectional pix' />
+          </div>
         </div>
         </div>
       </section>

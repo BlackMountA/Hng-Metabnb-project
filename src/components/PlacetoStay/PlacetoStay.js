@@ -1,14 +1,14 @@
 import Header from '../LandingPage/Header/Header';
 import Footer from '../LandingPage/Footer/Footer';
 import CategoriesBar from './CategoriesBar';
-import NFTs from './Nfts';
+import NFT from './Nft';
 
 const PlacetoStay = () => {
   return (
       <div>
       <Header />
       <CategoriesBar />
-      <NFTs />
+      <NFT />
       <Footer />
     </div>
   )

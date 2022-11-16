@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
+  margin-bottom: 251px;
 }
 .section4 .left-section {
   width: 28%;
@@ -52,7 +53,6 @@
   border-radius: 8px;
   padding: 14px 33px;
   border: none;
-  margin-bottom: 251px;
 }
 .section4 .left-section button p {
   font-family: "Red Rose";
@@ -72,5 +72,41 @@
   background-clip: text;
   text-fill-color: transparent;
 }
-.section4 .right-section {
+.right-section div {
+  display: flex;
+  justify-content: flex-end;
+  /* width: 100%; */
+}
+.right-section img {
+  /* padding: 0 5%; */
+  /* width: 72%; */
+  /* @media (max-width: 538px) {
+    &-img {
+      width: 100%;
+    } */
+}
+@media (max-width: 1100px) {
+  .section4-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .section4-container {
+    margin-bottom: 20px;
+  }
+  .section4 .left-section {
+    width: 50%;
+  }
+  .right-section div {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .right-section img {
+    /* padding: 0 5%; */
+    width: 72%;
+  }
+}
+@media (max-width: 700px) {
+  .section4 .left-section {
+    width: 80%;
+  }
 }

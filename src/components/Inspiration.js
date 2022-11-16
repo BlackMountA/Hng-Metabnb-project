@@ -1,17 +1,18 @@
-// import "../styles/Nfts.css";
-// import heart from "../images/heart.svg";
-// import star from "../images/star.svg";
+import React from "react";
+import "../styles/Inspiration.scss";
+import heart from "../images/heart.svg";
+import star from "../images/star.svg";
 
-const Nfts = ({nfts}) => {
+const Inspiration = (props) => {
   return (
-    <div className="Nft">
+    <div className="inspiration">
       <img
-        src={nfts.img}
+        src={props.inspiration.img}
         className="inspiration-img"
         alt="inspiration"
       />
 
-      {/* <img src={heart} alt="" className="heart" /> */}
+      <img src={heart} alt="" className="heart" />
 
       <div className="inspiration-texts">
         <div className="inspiration-info">
@@ -25,15 +26,15 @@ const Nfts = ({nfts}) => {
         </div>
 
         <div className="inspiration-star_rating">
-          {/* <img src={star} alt="" />
           <img src={star} alt="" />
           <img src={star} alt="" />
           <img src={star} alt="" />
-          <img src={star} alt="" /> */}
+          <img src={star} alt="" />
+          <img src={star} alt="" />
         </div>
       </div>
     </div>
   );
 };
 
-export default Nfts;
+export default Inspiration;
