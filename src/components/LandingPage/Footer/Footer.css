@@ -5,6 +5,7 @@ footer {
 }
 .footer-container {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   width: 86%;
   margin: 0 auto;
@@ -76,4 +77,19 @@ footer {
   align-items: center;
 
   color: #f1f3f9;
+}
+@media (max-width: 800px) {
+  .footer-container {
+    display: block;
+    padding-top: 33px;
+  }
+  .right-side {
+    display: block;
+  }
+  .navigations h4 {
+    margin-top: 30px;
+  }
+  .left-side {
+    margin-top: 30px;
+  }
 }

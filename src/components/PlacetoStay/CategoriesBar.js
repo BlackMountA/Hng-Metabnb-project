@@ -16,12 +16,13 @@ const Categories = () => {
               <li>Off-grid</li>
               <li>Farm</li>
               </ul>
-             </div> 
+             
         <div className='sub-nav__right' >
               <p>Location</p>
               <img src={Setting} alt='settings' />
               
-              </div>
+        </div>
+        </div> 
       </div>
   )
 }

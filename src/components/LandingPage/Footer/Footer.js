@@ -8,18 +8,7 @@ const Footer = () => {
   return (
     <footer>
       <div className='footer-container'>
-          <div className='left-side'>
-        <img src={Logo} alt='Company Logo' className='' />
-        <div className='footer__social-links'>
           
-        <a href='/'><img src={FacebookLogo} alt='Facebook Logo' /></a>
-        <a href='/'><img src={InstaLogo} alt='Instagram Logo' /></a>
-        <a href='/'><img src={TwitterLogo} alt='Twitter Logo' /></a>
-        </div>
-        <div className='copyright'>
-          &copy; 2022 Metabnb
-        </div>
-          </div>
           <div className='right-side'>
         <div className='navigations'>
           <h4>Community</h4>
@@ -49,7 +38,20 @@ const Footer = () => {
           </ul>
               </div>
         </div>
+        <div className='left-side'>
+        <img src={Logo} alt='Company Logo' className='' />
+        <div className='footer__social-links'>
+          
+        <a href='/'><img src={FacebookLogo} alt='Facebook Logo' /></a>
+        <a href='/'><img src={InstaLogo} alt='Instagram Logo' /></a>
+        <a href='/'><img src={TwitterLogo} alt='Twitter Logo' /></a>
         </div>
+        <div className='copyright'>
+          &copy; 2022 Metabnb
+        </div>
+          </div>
+      </div>
+      
       </footer>
   )
 }

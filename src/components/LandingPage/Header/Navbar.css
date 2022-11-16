@@ -1,17 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;500;700&display=swap");
 
+.navbar-container {
+  width: 86%;
+  margin: 0 auto;
+  height: 60px;
+}
 nav {
   display: flex;
-  width: 86%;
   /* padding-top: 42px; */
   justify-content: space-between;
   /* gap: 48px; */
   /* margin: 0 auto; */
   /* max-width: 1220px; */
-  margin: 0 auto;
+  align-items: center;
   margin-top: 42px;
   margin-bottom: 125px;
 }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -51,4 +56,97 @@ nav {
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   border-radius: 10px;
   border: none;
+}
+
+.mobile-nav__links {
+  list-style: none;
+}
+.mobile-nav__link {
+  text-decoration: none;
+  margin: 1rem;
+}
+.mobile-nav {
+  /* display: none; */
+  position: fixed;
+  z-index: 2;
+  width: 86%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.mobile-nav__links {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+
+  list-style: none;
+}
+.mobile-nav__link--spe {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-nav__links a {
+  text-decoration: none;
+  color: rgb(14, 14, 97);
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+
+  /* text black */
+
+  color: #434343;
+}
+.mobile-nav button {
+  /* margin: 1rem; */
+  width: 100%;
+  padding: 0.6rem;
+  text-align: center;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  /* white */
+
+  color: #ffffff;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  border-radius: 10px;
+  border: none;
+}
+.menu__buttons {
+  vertical-align: middle;
+
+  display: none;
+}
+.menu__button {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  margin: 2px;
+}
+
+@media (max-width: 1100px) {
+  .menu__buttons {
+    vertical-align: middle;
+    display: block;
+  }
+  .menu__button {
+    width: 25px;
+    height: 5px;
+    background-color: black;
+    margin: 2px;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar__btn {
+    display: none;
+  }
 }

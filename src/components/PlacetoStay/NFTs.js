@@ -24,7 +24,7 @@ const NFTs = () => {
       <Nft image={Nft2}/>
       <Nft image={Nft3}/>
       <Nft image={Nft4}/>
-      <Nft image={Nft5} />
+      {/* <Nft image={Nft5} />
       <Nft image={Nft6}/>
       <Nft image={Nft7} />
       <Nft image={Nft8}/>
@@ -35,7 +35,7 @@ const NFTs = () => {
       <Nft image={Nft13}/>
       <Nft image={Nft14}/>
       <Nft image={Nft15}/>
-      <Nft image={Nft16}/>
+      <Nft image={Nft16}/> */}
     </div>
   )
 }

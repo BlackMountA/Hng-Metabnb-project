@@ -1,17 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;500;700&display=swap");
 
 .sub-nav {
-  display: flex;
+  /* display: flex; */
   width: 86%;
   margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.categories-bar ul {
+  flex-wrap: wrap;
+}
+.categories-bar {
   display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.categories-bar ul {
   list-style: none;
-  gap: 48px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 .categories-bar ul li {
   font-family: "Red Rose";
@@ -27,12 +34,13 @@
 }
 .sub-nav__right {
   display: flex;
+  /* flex-wrap: wrap; */
   gap: 40px;
   background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
   border: 1px solid #b4b4b4;
   border-radius: 8px;
   padding: 12px;
-  align-items: center;
+  /* align-items: center; */
 }
 .sub-nav__right p {
   font-family: "Red Rose";

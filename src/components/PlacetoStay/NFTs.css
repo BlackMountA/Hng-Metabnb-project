@@ -2,20 +2,22 @@
 
 .nfts {
   width: 86%;
-  max-width: 86%;
+
   margin: 0 auto;
-  /* background-color: red;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 6px; */
+  background-color: red;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-gap: 6px; */
 
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 6px;
+  /* gap: 6px; */
 }
-/* @media (max-width: 1200px) and (min-width: 1020px) {
+/* @media (max-width: 1200px) and (min-width: 1000px) {
   .nfts {
-    width: 83%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
   }
 } */

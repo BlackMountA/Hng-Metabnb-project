@@ -6,19 +6,49 @@ import './Modal.css'
 import X from './x.svg'
 import DownBtn from './DownBtn.svg'
 import WalletConnect from './WalletConnect.png'
-import { useState } from 'react'
+import {  useState } from 'react'
 
 const Navbar = () => {
+    const [sidebar, Setsidebar] = useState(false)
     const [modal, Setmodal] = useState(false);
-    const onToggle = () => {
-        Setmodal(!modal)
+    // const navRef = useRef()
+    const onToggling = () => {
+            Setsidebar(!sidebar)
     }
+    const onToggle = () => {
+        Setmodal(!modal) 
+        }
+   
+    
     return (
-        <>
+        <div className='navbar-container'>
             
-            
+            {sidebar && (
+                    <div class="mobile-nav">   
+    
+    <ul class="mobile-nav__links">
       
-      <nav>
+        <li class="mobile-nav__link mobile-nav__link--spe"><a href="/"> Home </a> 
+      <img src={X}  alt='cancel- button' onClick={onToggling}></img>
+     </li>
+    
+        <li className="mobile-nav__link"><a href="/">Place to Stay</a></li>
+      
+      
+        <li class="mobile-nav__link"><a href="/"> Nfts </a></li>
+      
+      
+        <li class="mobile-nav__link"><a href="/"> Community </a></li>
+      </ul>
+      <button  onClick={onToggle}>Connect Wallet</button>
+    </div>
+           
+            )}
+           
+           
+              
+            <nav >
+               
           <img src={logo} alt='MetaBnb' />
           <div className='navbar'>
               <ul>
@@ -28,8 +58,19 @@ const Navbar = () => {
                   <li><Link to={'/'} className='navbar__links'>Community</Link></li>
               </ul>
           </div>
-          <button className='navbar__btn' onClick={onToggle}>Connect Wallet</button>
+                    <button className='navbar__btn' onClick={onToggle}>Connect Wallet</button>
+                 <div class="menu__buttons" onClick={onToggling}>
+      <div class="menu__button"></div>
+      <div class="menu__button"></div>
+      <div class="menu__button"></div>
+    </div>   
+                    
             </nav>
+            
+
+
+
+
             {modal && (
 <div className='modal'>
                 <div className='overlay' onClick={onToggle}></div>
@@ -63,7 +104,7 @@ const Navbar = () => {
                     </div>
             
             )}
-            </>
+            </div>
   )
 }
 
