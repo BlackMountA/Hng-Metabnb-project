@@ -1,15 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;500;700&display=swap");
 
-.Nfts {
+.nfts {
+  width: 86%;
+  max-width: 86%;
+  margin: 0 auto;
+  /* background-color: red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-}
-.nft-text {
+  grid-gap: 6px; */
+
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
 }
-.nft-description {
-  display: flex;
-  justify-content: space-between;
-}
+/* @media (max-width: 1200px) and (min-width: 1020px) {
+  .nfts {
+    width: 83%;
+  }
+} */

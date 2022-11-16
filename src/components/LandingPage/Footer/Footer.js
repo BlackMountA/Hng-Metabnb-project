@@ -1,7 +1,7 @@
 import Logo from './FooterLogo.png'
-import InstaLogo from './InstaLogo.png'
-import TwitterLogo from './TwitterLogo.png'
-import FacebookLogo from './FacebookLogo.png'
+import InstaLogo from './InstaLogo.svg'
+import TwitterLogo from './TwitterLogo.svg'
+import FacebookLogo from './FacebookLogo.svg'
 import './Footer.css'
 
 const Footer = () => {

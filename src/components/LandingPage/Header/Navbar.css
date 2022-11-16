@@ -23,7 +23,19 @@ nav {
   /* padding: 0px; */
   gap: 48px;
 }
+.navbar__links {
+  text-decoration: none;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
 
+  /* text black */
+
+  color: #434343;
+}
 .navbar__btn {
   padding: 15px 26px;
   font-family: "Red Rose";

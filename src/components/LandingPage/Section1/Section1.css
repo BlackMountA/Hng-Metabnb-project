@@ -28,6 +28,9 @@
 
   color: #434343;
 }
+.side1__title--spe {
+  color: #a02279;
+}
 .side1__content {
   font-family: "Red Rose";
   font-style: normal;
@@ -35,7 +38,7 @@
   font-size: 24px;
   line-height: 35px;
   /* or 146% */
-
+  width: 83%;
   /* text black */
 
   color: #434343;

@@ -1,0 +1,15 @@
+.section3 {
+  /* width: 86%; */
+  margin: 0 auto;
+}
+.section3__title {
+  text-align: center;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  /* identical to box height */
+  margin: 20px;
+  color: #000000;
+}

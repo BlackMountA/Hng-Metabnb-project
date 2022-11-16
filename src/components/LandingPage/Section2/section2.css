@@ -11,6 +11,7 @@
   /* max-width: 1220px; */
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 19px;
 }
 .sponsors__content--opensea {
   display: flex;

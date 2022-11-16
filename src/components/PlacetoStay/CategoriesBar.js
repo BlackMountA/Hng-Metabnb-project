@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom"
-import Setting from './setting-5.png'
+import Setting from './Settings.svg'
 import './CategoriesBar.css'
 
 const Categories = () => {

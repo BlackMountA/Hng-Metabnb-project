@@ -5,10 +5,10 @@ const Section1 = () => {
       <section className='section1'>
           <div className='side1'>
               <p className='side1__title'>
-                  rent a place away from home in the metaverse
+                  Rent a <span className='side1__title--spe'>place</span> away from <span className='side1__title--spe'>home</span> in the <span className='side1__title--spe'>metaverse</span>
               </p>
               <p className='side1__content'>
-                  we proivde you with luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort
+                  We provide you with luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort
               </p>
               <div className="search-bar">
                   <input type={'search'} placeholder='Search for location' className='search-input' /> <button>Search</button>
